@@ -1,0 +1,87 @@
+@mixin fontAttribute($weight, $line-height, $font-size) {
+  @if $line-height {
+    line-height: $line-height;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $font-size {
+    font-size: $font-size !important;
+  }
+}
+
+.typography-h900 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(700, 40px, 36px);
+}
+
+.typography-h800 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(600, 32px, 28px);
+}
+
+.typography-h700 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(500, 28px, 24px);
+}
+
+.typography-h600 {
+  @include fontAttribute(500, 24px, 20px);
+}
+
+.typography-h500-longform {
+  @include fontAttribute(500, 24px, 16px);
+}
+
+.typography-h500 {
+  @include fontAttribute(500, 20px, 16px);
+}
+
+.typography-h400-longform {
+  @include fontAttribute(500, 24px, 14px);
+}
+
+.typography-h400 {
+  @include fontAttribute(500, 16px, 14px);
+}
+
+.typography-h300 {
+  @include fontAttribute(500, 16px, 12px);
+  text-transform: uppercase;
+}
+
+.typography-h200 {
+  @include fontAttribute(500, 16px, 12px);
+}
+
+.typography-h100 {
+  @include fontAttribute(400, 16px, 12px);
+}
+
+.typography-paragraph {
+  @include fontAttribute(400, 24px, 14px);
+}
+
+.typography-form {
+  @include fontAttribute(400, 24px, 14px);
+}
+
+.typography-button {
+  @include fontAttribute(400, 16px, 14px);
+}
+
+.typography-link {
+  @include fontAttribute(400, 20px, 14px);
+  color: var(--base-600);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.typography-secondary {
+  color: var(--n-800);
+}
+.typography-tertiary {
+  color: var(--n-600);
+}
