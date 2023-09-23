@@ -68,7 +68,7 @@ const ProductsTable = ({
     select: (data: any) => data?.data,
   });
 
-  const highchartData = data?.products?.map((e) => ({
+  const highchartData = data?.products?.map((e: any) => ({
     title: e?.title,
     stock: e?.stock,
   }));
