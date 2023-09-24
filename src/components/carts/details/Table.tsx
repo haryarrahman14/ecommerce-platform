@@ -31,7 +31,7 @@ const columns: Column[] = [
   { id: "price", label: "Price", minWidth: 100 },
   { id: "total", label: "Total Price", minWidth: 100 },
   { id: "discountPercentage", label: "Discount (%)", minWidth: 100 },
-  { id: "discountedPrice", label: "totalPrice", minWidth: 100 },
+  { id: "discountedPrice", label: "Total Price", minWidth: 100 },
 ];
 const CartTable = ({
   isFetching,
